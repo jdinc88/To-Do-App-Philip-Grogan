@@ -1,0 +1,89 @@
+/*
+* Author: Philip Grogan	
+* Assignment: WE4.1 To-do List Mobile Web Application, Digital Skills Academy	
+* Date:	2016/09/03	
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', arial;
+	color: #444;
+	background: #f8f8f8;
+}
+
+h1 {
+	font-size: 130%;
+	font-weight: normal;
+	margin: 0;
+}
+
+#container {
+	max-width: 650px;
+	margin: 50px auto;
+}
+
+#title-bar {
+	padding: 2%;
+	margin: 2%;
+	border: 1px solid #cfcfcf;
+	font-size: 150%;
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #eee 100%);
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #eee 100%);
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #eee 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(100, #eee));
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #eee 100%);
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #eee 100%);
+}
+
+input {
+	background: #fff;
+	color: #444;
+	border: 1px solid #cfcfcf;
+	padding: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #a5a5a5; 
+}
+
+button {
+	background: #fff;
+	color: #444;
+	border: 1px solid #cfcfcf;
+	padding: 10px;
+}
+
+input:hover, button:hover {
+	cursor: pointer;
+	background: #eee;
+}
+
+.box:hover {
+	cursor: text;
+	background: #fff;
+}
+
+.remove {
+	width: 300px;
+	border: 1px solid #bbb;
+	border-radius: 7px;
+	margin-left: 30px;
+}
+
+.spacers {
+	margin: 18px 5px;
+}
+
+@media all and (max-width : 800px) {
+#container {
+	width: 92%;
+	margin: 2% 4%;
+ }
+
+ .box {
+ 	margin-bottom: 2%;
+ }
+}

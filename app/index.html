@@ -1,0 +1,45 @@
+<!-- 
+* Author: Philip Grogan	
+* Assignment: WE4.1 To-do List Mobile Web Application, Digital Skills Academy	
+* Date:	2016/09/01	
+* Ref: http://stackoverflow.com/questions/21736490/angularjs-1-2-storing-data-arrays-in-services
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<title>To Do List</title>
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+
+            <div id="title-bar"><h1>My To-do List</h1></div>
+
+            <div id="container">
+
+<h2>You have <span>{{getTotalTodos()}}</span> things to do</h2>
+
+<form ng-submit="todoAdd()">
+    <input class="box" type="text" ng-model="todoInput" size="50" placeholder="Add a new item to list">
+    <input type="submit" value="Add a new item">
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done" class="spacers"> <span ng-bind="x.todoText"></span>
+</div>
+
+<p><button ng-click="remove()" class="remove">Remove checked items</button></p>
+
+                </div><!-- end #container -->
+
+
+<script type="text/javascript" src="controller.js"></script>
+
+
+</body>
+</html>

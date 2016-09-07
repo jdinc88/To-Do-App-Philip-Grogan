@@ -1,0 +1,32 @@
+<!-- 
+* Author: Philip Grogan 
+* Assignment: WE4.1 To-do List Mobile Web Application, Digital Skills Academy   
+* Date: 2016/09/01  
+* Ref: http://stackoverflow.com/questions/21736490/angularjs-1-2-storing-data-arrays-in-services
+-->
+
+
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>To-do List</name>
+    <description>
+       A Simple Todo List App for WebElevate
+    </description>
+    <author email="philip.grogan@webelevate.ie" href="">
+        Philip Grogan
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <splash src="splash.png" />
+    <icon src="icon.png" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+</widget>
